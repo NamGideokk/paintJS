@@ -4,7 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>그림판</title>
   </head>
-  <body></body>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div class="controls__range">
+      <input
+        type="range"
+        id="range"
+        min="0.1"
+        max="5.0"
+        value="2.5"
+        step="0.1"
+      />
+    </div>
+    <div class="controls__btns">
+      <button class="mode">FILL</button>
+      <button class="save">SAVE</button>
+      <button class="reset">RESET</button>
+    </div>
+    <div class="controls">
+      <div
+        class="controls__color colors"
+        style="background-color: #1f1f1f"
+      ></div>
+      <div class="controls__color colors" style="background-color: white"></div>
+      <div class="controls__color colors" style="background-color: red"></div>
+      <div
+        class="controls__color colors"
+        style="background-color: orange"
+      ></div>
+      <div
+        class="controls__color colors"
+        style="background-color: rgb(255, 255, 2)"
+      ></div>
+      <div
+        class="controls__color colors"
+        style="background-color: rgb(55, 208, 55)"
+      ></div>
+      <div
+        class="controls__color colors"
+        style="background-color: rgb(82, 197, 255)"
+      ></div>
+      <div
+        class="controls__color colors"
+        style="background-color: rgb(174, 68, 255)"
+      ></div>
+      <div
+        class="controls__color colors"
+        style="background-color: rgb(51, 43, 106)"
+      ></div>
+    </div>
+    <script defer src="app.js"></script>
+  </body>
 </html>

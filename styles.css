@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  background-color: rgb(235, 252, 255);
+  text-align: center;
+}
+
+#canvas {
+  margin-top: 130px;
+  width: 800px;
+  height: 800px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(30, 30, 30, 0.2);
+}
+
+.controls {
+  width: 800px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px auto;
+}
+
+.controls__range {
+  margin-top: 50px;
+}
+
+.controls__btns {
+  width: fit-content;
+  height: fit-content;
+  margin: 20px auto;
+}
+
+.controls__btns > button {
+  width: fit-content;
+  height: fit-content;
+  font-size: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 5px 1px rgba(30, 30, 30, 0.2);
+  border: none;
+  transition: 0.3s;
+}
+.controls__btns > button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 1px rgba(30, 30, 30, 0.2);
+}
+.controls__btns > button:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 1px rgba(30, 30, 30, 0.2);
+}
+
+.controls__color {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 5px 5px rgba(30, 30, 30, 0.2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.controls__color:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 5px rgba(30, 30, 30, 0.2);
+}
