@@ -22,7 +22,7 @@ body {
   width: 800px;
   height: fit-content;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 50px auto;
 }
 
@@ -66,7 +66,6 @@ body {
   transition: 0.3s;
 }
 
-.controls__color:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 5px rgba(30, 30, 30, 0.2);
+.select {
+  transform: translateY(-15px) scale(1.3);
 }
