@@ -71,7 +71,6 @@ canvas.addEventListener("contextmenu", (e) => {
 
 colors.forEach((color) =>
   color.addEventListener("click", (e) => {
-    e.target.classList.toggle("select");
     ctx.strokeStyle = e.target.style.backgroundColor;
     ctx.fillStyle = e.target.style.backgroundColor;
   })

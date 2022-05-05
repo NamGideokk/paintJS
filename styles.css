@@ -9,6 +9,10 @@ body {
   text-align: center;
 }
 
+button {
+  border: none;
+}
+
 #canvas {
   margin-top: 130px;
   width: 800px;
@@ -65,7 +69,6 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
-
-.select {
+.controls__color:focus {
   transform: translateY(-15px) scale(1.3);
 }
