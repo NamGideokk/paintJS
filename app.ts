@@ -79,9 +79,8 @@ colors.forEach((color) =>
 
 if (range) {
   range.addEventListener("input", (e: Event) => {
-    const eventTarget = e.target as HTMLTextAreaElement;
-
-    ctx.lineWidth = eventTarget.value;
+    const eventTarget = e.target as HTMLInputElement;
+    ctx.lineWidth = Number(eventTarget.value);
   });
 }
 
