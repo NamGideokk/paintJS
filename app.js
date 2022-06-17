@@ -1,10 +1,10 @@
 "use strict";
 
-const canvas: HTMLCanvasElement = document.querySelector("#canvas");
+const canvas = document.querySelector("#canvas");
 const ctx = canvas.getContext("2d");
 const colors = document.querySelectorAll(".colors");
 const range = document.querySelector("#range");
-const mode: HTMLButtonElement = document.querySelector(".mode");
+const mode = document.querySelector(".mode");
 const save = document.querySelector(".save");
 const reset = document.querySelector(".reset");
 
@@ -70,16 +70,16 @@ canvas.addEventListener("contextmenu", (e) => {
 });
 
 colors.forEach((color) =>
-  color.addEventListener("click", (e: Event) => {
-    const eventTarget = e.target as HTMLElement;
+  color.addEventListener("click", (e) => {
+    const eventTarget = e.target;
     ctx.strokeStyle = eventTarget.style.backgroundColor;
     ctx.fillStyle = eventTarget.style.backgroundColor;
   })
 );
 
 if (range) {
-  range.addEventListener("input", (e: Event) => {
-    const eventTarget = e.target as HTMLInputElement;
+  range.addEventListener("input", (e) => {
+    const eventTarget = e.target;
     ctx.lineWidth = Number(eventTarget.value);
   });
 }
